@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>💰 Personal Expense Tracker</h1>
+      
+      <div class="summary">
+        <div class="card balance">
+          <h3>Balance</h3>
+          <p id="balance">$0.00</p>
+        </div>
+        <div class="card income">
+          <h4>Income</h4>
+          <p id="income">$0.00</p>
+        </div>
+        <div class="card expense">
+          <h4>Expense</h4>
+          <p id="expense">$0.00</p>
+        </div>
+      </div>
+
+      <form id="transactionForm">
+        <input type="text" id="name" placeholder="Enter name" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <input type="date" id="date" required />
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+      </form>
+
+      <h3>Transactions</h3>
+      <ul id="transactionList"></ul>
+
+      <div class="buttons">
+        <button onclick="downloadCSV()">⬇️ Download CSV</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

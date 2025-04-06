@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom left, lightgreen , lightblue);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #6a1b9a;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.card h3, .card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.balance {
+  background-color: #ffe082;
+}
+
+.income {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.expense {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+form input, form select, form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #4a0072;
+}
+
+#transactionList {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#transactionList li {
+  background: #fafafa;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.income {
+  border-color: #4caf50;
+}
+
+li.expense {
+  border-color: #f44336;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+}
+
+li button:hover {
+  color: red;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
