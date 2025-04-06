@@ -1,6 +1,6 @@
 💸 Expense Tracker
 
-A professional and colorful Expense Tracker Web App** that allows users to manage their income and expenses, delete transactions, and download transaction history.
+A professional and colorful Expense Tracker Web App that allows users to manage their income and expenses, delete transactions, and download transaction history.
 Built using HTML, CSS, and JavaScript with a clean and responsive design.
 
 ---
