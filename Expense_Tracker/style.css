@@ -136,3 +136,59 @@ li button:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .summary {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  form input,
+  form select,
+  form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  #transactionList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
